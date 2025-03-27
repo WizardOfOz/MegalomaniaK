@@ -4,11 +4,10 @@
 package megalomaniak;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        System.out.println("Starting Megalomaniak server...");
+        MegalomaniakServer server = Megalomaniak.createServer();
+        // server.Start();
+        // System.out.println("Megalomaniak server started.");
     }
 }
